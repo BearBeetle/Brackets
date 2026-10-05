@@ -1,4 +1,4 @@
-# Backets
+# Brackets
 
 [日本語](#日本語) | [English](#english)
 
@@ -16,29 +16,29 @@ Visual Studio 2022 / Win32 API（純正・Unicode）で実装しています。
 - 入力欄に複数行テキストを入力
 - インデント記号欄に付加したい文字列を指定（既定値: `    >` ＝半角スペース4個+`>`）
 - 「実行」ボタン押下で、各行の先頭にインデント記号を付加した結果を出力欄へ表示
-- 実行時、インデント記号は `Backets.ini` へ自動保存される
+- 実行時、インデント記号は `Brackets.ini` へ自動保存される
 
 ### ビルド方法
 
-1. Visual Studio 2022 で `Backets.sln`（または該当プロジェクト）を開く
+1. Visual Studio 2022 で `Brackets.sln`（または該当プロジェクト）を開く
 2. 文字セットは **Unicode** を使用（既定設定のまま）
 3. 構成 (Debug/Release) とプラットフォーム (x64/Win32) を選択
 4. ビルド（`Ctrl+Shift+B`）を実行
-5. 生成された `Backets.exe` を実行
+5. 生成された `Brackets.exe` を実行
 
 #### 使用ファイル
 
 - `main.cpp`
 - `resource.h`
-- `Backets.rc`
+- `Brackets.rc`
 - `targetver.h`
 
 MFC / ATL / C++/CLI / .NET 等には一切依存せず、純粋な Win32 API のみで構成されています。
 
 ### INI 仕様
 
-- ファイル名: `Backets.ini`
-- 配置場所: `Backets.exe` と同一フォルダ（カレントディレクトリに依存しない）
+- ファイル名: `Brackets.ini`
+- 配置場所: `Brackets.exe` と同一フォルダ（カレントディレクトリに依存しない）
 - セクション: `[Settings]`
 - キー: `IndentString`
 
@@ -70,29 +70,29 @@ It is implemented with Visual Studio 2022 using the pure Win32 API (Unicode).
 - Enter multi-line text in the input box.
 - Specify the string to prepend in the indent string box (default: `    >` = four half-width spaces followed by `>`).
 - Press the "Run" button to display the result, with the indent string added to the start of each line, in the output box.
-- On execution, the indent string is automatically saved to `Backets.ini`.
+- On execution, the indent string is automatically saved to `Brackets.ini`.
 
 ### Build Instructions
 
-1. Open `Backets.sln` (or the relevant project) in Visual Studio 2022.
+1. Open `Brackets.sln` (or the relevant project) in Visual Studio 2022.
 2. Use the **Unicode** character set (keep the default setting).
 3. Select the configuration (Debug/Release) and platform (x64/Win32).
 4. Build (`Ctrl+Shift+B`).
-5. Run the generated `Backets.exe`.
+5. Run the generated `Brackets.exe`.
 
 #### Source Files
 
 - `main.cpp`
 - `resource.h`
-- `Backets.rc`
+- `Brackets.rc`
 - `targetver.h`
 
 The project has no dependency on MFC, ATL, C++/CLI, .NET, or similar frameworks; it is built purely on the Win32 API.
 
 ### INI Specification
 
-- File name: `Backets.ini`
-- Location: the same folder as `Backets.exe` (independent of the current directory)
+- File name: `Brackets.ini`
+- Location: the same folder as `Brackets.exe` (independent of the current directory)
 - Section: `[Settings]`
 - Key: `IndentString`
 
